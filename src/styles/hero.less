@@ -1,0 +1,20 @@
+@import 'variaveis';
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(/src/imagems-interestrelar/interstrelar-hero.avif);
+    text-align: center;
+    background-size: cover;
+
+    @media(max-width: 768px){
+    background-image:url(https://servidor-estaticos-lac-nu.vercel.app/hero_tablet.jpg);
+    padding-top: calc(50vw + 25px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -55px;
+
+    }
+    h3 {
+        background-color: rgb(255, 2, 2);
+    }
+}

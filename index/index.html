@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney plus</title>
+    <link rel="stylesheet" href="/dev/styles/main.css">
+</head>
+<body>
+    <header class="header header--is-hidden">
+        <div class="header__container">
+            <h1 >
+            <img class="header__logo" src="/dist/images/disneyplus.svg" alt="disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item ">
+                    <a href="" class="button button--secondary">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero" style="background-color: #fff;">
+        <div class="hero__content">
+        </div>
+    </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
+                Em breve
+            </button>
+            <button data-tab-button="populares" class="shows__tabs__button">
+                Mais populares 
+            </button>
+            <button data-tab-button="mais_no_star" class="shows__tabs__button">
+                Mais no Star+
+            </button>
+        </nav>
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="../dist/images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/em_breve/desencantada.jpg" alt="desencantada">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/em_breve/lobisomem.jpg" alt="lobisomem">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/em_breve/sem_limites.jpg" alt="sem_limites">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/em_breve/the_santa_clauses.jpg" alt="the_santa_clauses">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/em_breve/willow.jpg" alt="willow">
+            </li>
+        </ul>
+        <ul data-tab-id="populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="../dist/images/mais_populares/cavaleira_da_lua.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+            <img src="../dist/images/mais_populares/bluey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/mais_populares/obi_wan.jpg" alt="spidey">
+            </li>
+                <li class="shows__list__item">
+                <img src="../dist/images/mais_populares/red.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/mais_populares/tudo_igual_sqn.jpg" alt="spidey">
+            </li>
+        </ul>
+        <ul data-tab-id="mais_no_star" class="shows__list">
+            <li class="shows__list__item">
+                <img src="../dist/images/mais_no_star_plus/os_simpson.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+            <img src="../dist/images/mais_no_star_plus/nba.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/mais_no_star_plus/belair.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/mais_no_star_plus/libertadores.jpg" alt="spidey">
+            </li>
+                <li class="shows__list__item">
+                <img src="../dist/images/mais_no_star_plus/premier_league.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/mais_no_star_plus/the_kardashians.jpg" alt="spidey">
+            </li>
+        </ul>
+    </section>
+    <section class="plans">
+        <h2 class="title--small">Escolha teu plano</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="../dist/images/logos/disneyplus_underline.png" alt="Disney+">
+                <strong class="title--small">
+                    R$ 27,90/mes*
+                </strong>
+                <p class="text--big">
+                    No Disney+ voce encontra as ultimas estreias do cinema, originais e classicos inesquecíveis.
+                </p>
+                <button class="button">assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="../dist/images/logos/disney_star_plus_sm.png" alt="Disney+">
+                <strong class="title--small">
+                    R$ 45,90/mes*
+                </strong>
+                <p class="text--big">
+                    Assine Disney+ e Star+ jutos. Economize e aproveite agora os dois serviços por um preçco único.
+                </p>
+                <button class="button">assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="../dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
+                <strong class="title--small">
+                    R$ 55,90/mes* 
+                </strong>
+                <p class="text--big">
+                    Disney+,Star+ e STARZPLAY em um plano especial. Assine agora os tres serviços juntos.
+                </p>
+                <button class="button">assine agora</button>
+            </li>
+        </ul>
+        <p class="text--small">
+            *O preço pode variar saco a assinatura seja feita atraves de outras plataformas.
+        </p>
+    </section>
+    <section class="watch">
+        <img src="/dist/images/tv_pc_tablet_celular.png" alt="tv , pc e tablet">
+        <div class="watch__link">
+            <h2 class="title">Assista do seu jeito</h2>
+            <p class="text--big">
+                Aproveite a tela grande da tv ou assista no tablet, laptop ,celular e outros aparelhos. Nossa seção de titulos em 4k não para de crescer.além disso ,para a felicidade de todo ,é possivel assistir em ate 4 telas ao mesmo tempo.
+            </p>
+        </div>
+    </section>
+    <section class="watch  watch--full">
+        <picture>
+            <source media="(max-width: 768px)" srcset="/dist/images/fundo_rei_leao_celular.png">
+            <img src="/dist/images/fundo_rei_leao.png" alt="tv , pc e tablet">
+        </picture>
+        <div class="watch__link  watch--full watch--full-container">
+            <h2 class="title">Baixe filmes e séries</h2>
+            <p class="text--big">
+                Baixe e assista quando e aonde quiser. Assim, seua favoritos estão sempre com vocé , até mesmo sem internet.
+            </p>
+        </div>
+    </section>
+    <section class="available-devices">
+        <h2 class="title">Disonivél nos seus dispositivos favoritos</h2>
+        <ul class="available-devices__list">
+            <li class="available-devices__list__item">
+                <img src="../dist/images/dispositivos/computador.png" alt="computador">
+                <h4 class="title--small">computador</h4>
+                <ul class="text">
+                    <li class="links__item">Chome OS</li>
+                    <li>MacOs</li>
+                    <li>Pc Windows</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="../dist/images/dispositivos/tv.png" alt="televisão">
+                <h4 class="title--small">TVs</h4>
+                <ul class="text">
+                    <li>Amazon Fire TV</li>
+                    <li>Android TV</li>
+                    <li>Apple TV</li>
+                    <li>Chomecast</li>
+                    <li>TVs LG</li>
+                    <li>Roku</li>
+                    <li>Samsung</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="../dist/images/dispositivos/videogames.png" alt="videogames">
+                <h4 class="title--small">VideoGame</h4>
+                <ul class="text">
+                    <li>Ps4</li>
+                    <li>Ps5</li>
+                    <li>Xbox One</li>
+                    <li>Xbox Series X</li>
+                    <li>Xbox Series S</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="../dist/images/dispositivos/celular.png" alt="celular">
+                <h4 class="title--small">Celular</h4>
+                <ul class="text">
+                    <li>Tablets Amazon Fire</li>
+                    <li>Celulares e Tablets Android</li>
+                    <li>iphone e ipad</li>
+                </ul>
+            </li>
+            
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="title">Perguntas frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    O que esttá incluindo no Disney+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p>O Disney+ oferece:</p><br>
+                    <p>*Experiencia premium sm intervalos comerciais.</p>
+                    <p>*As melhores historias da Disney,Pixar,Marvel,Star Wars e National Geographic, tudo em um  só lugar.</p>
+                    <p>Groupwacht:assista junto cm amigos ou familiares, mesmo separados.</p>
+                    <p>Downloads ilimitados em até 4K UHD e HDR.</p>
+                    <p>A possibilidade de assiteir em até 4 dispositivos compativéis simultaneamente sem custo adicional.</p>
+                    <p>IMAX Enhanced: dísponivel para alguns titulos da marvel em dispositivos compatíveis com Disney+.</p>
+                </div>
+            </li>
+            <li class="faq__questions__item  ">
+                <div class="faq__questions__item__question" data-faq-question>
+                    já tem o Disney+ ou Star+e quer o combo+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Quais formas de pagamento posso utilizar?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Como posso ver conteudo com classificação indicativa até 16 e 18?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="/dist/images/disneyplus.svg" alt="Disney+">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="/dist/images/icones/globe.svg" alt="Globo do mundo">
+                        <select>
+                            <option >English</option>
+                            <option selected>Portugues</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e condiçoes de Uso </a>
+                </li> 
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Política e privacidade e respeito  </a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Proteção de dados no Brasil</a>
+                </li> 
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Anúcios personaizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">
+                        Dispositivos compatíveis
+                    </a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Sobre o Disney+</a>
+                </li>
+
+            </ul>
+            <p class="text--small">
+                2022 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sejeito a disponibilidade. 
+            </p>
+            <p class="text--small">
+                Disney+ é um serviço pago, baseado e assinatura e sujeito a termos e condições. O serviço Disney+ é comercializada por The Walt Disney Company(Brasil) ltda,World trade center,AVDas Nacões Unidas, 12.551, 12.555, 12.559, piso10, São Paulo/SP- CEP 04578-903,Brasil o CNPJ/M 73.042.962./0004-20
+            </p>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
