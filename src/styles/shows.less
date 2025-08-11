@@ -3,17 +3,30 @@
 .shows {
     padding: 2vw 5.6vw;
     min-height: 50vw;
+    background-color: black;
 
     &__list {
         display: none;
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr   ;
         gap: 24px;
         margin-top: 44px;
+        
 
         @media (max-width: 768px) {
             grid-template-columns: 1fr 1fr ;
         }
         &__item {
+            img {
+                display: flex;
+                justify-content: center;
+                max-width: 100%;
+                border-radius: 4px;
+                width: 400px;
+                //fatalta alinhar as imagens
+            }
+            h2 {
+                margin-bottom: 20px;
+            }
             img {
                 max-width: 100%;
                 border-radius: 4px;
@@ -26,6 +39,7 @@
     &__tabs {
         display: flex;
         justify-content: center;
+        margin-bottom: 50px;
         
         @media (max-width: 768px){
         white-space: nowrap;
