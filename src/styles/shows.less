@@ -10,8 +10,13 @@
         grid-template-columns: 1fr 1fr   ;
         gap: 24px;
         margin-top: 44px;
-        &__div {
-            border:  2px solid  #fff;
+        &__div { 
+            @media (max-width: 768px) {
+                display: block;
+                h4 {
+                    text-align: center;
+                }
+            }
             padding: 25px 0;
             padding-left: 15px;
             h4 {
@@ -19,7 +24,6 @@
             }
         }
         &__text {
-            border: 2px solid yellow;
             padding: 24px;
             text-align: center;
             img {
@@ -38,7 +42,6 @@
             grid-template-columns: 1fr 1fr ;
         }
         &__item {
-            border: 2px solid blue;
             padding: 20px;
             justify-self: center;
             img {

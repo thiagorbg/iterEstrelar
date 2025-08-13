@@ -1,112 +1,19 @@
-.available-devices {
-  padding: 5.6vw;
-}
-.available-devices h2 {
-  text-align: center;
-  margin-bottom: 24px;
-}
-.available-devices__list {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(4, 1fr);
-}
-@media (max-width: 768px) {
-  .available-devices__list {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.available-devices__list__item {
-  text-align: center;
-}
-.available-devices__list__item h4 {
-  margin-top: 20px;
-  margin-bottom: 24px;
-}
-.available-devices__list__item li {
-  list-style: none;
-}
-.available-devices__list__item img {
-  max-width: 100%;
-}
 
-.faq {
-  padding: 5.6vw;
-}
-.faq h2 {
-  text-align: center;
-  margin-bottom: 24px;
-}
-.faq__questions__item {
-  background-color: #13151d;
-  margin-bottom: 16px;
-}
-.faq__questions__item__question {
-  color: #fff;
-  font-size: 20px;
-  padding: 24px;
-  display: block;
-  cursor: pointer;
-  position: relative;
-}
-.faq__questions__item__question::after {
-  content: '+';
-  top: 0;
-  position: absolute;
-  right: 24px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  font-size: 40px;
-}
-.faq__questions__item__answer {
-  height: 0;
-  overflow: hidden;
-  transition: height, 0.5s ease;
-  padding: 0 24px;
-}
-.faq__questions__item--is-open .faq__questions__item__question::after {
-  content: '-';
-}
-.faq__questions__item--is-open .faq__questions__item__answer {
-  height: auto;
-  padding: 24px;
-  transition: height, 0.5s ease;
-}
 
 .footer {
-  padding: 26px 8px;
+  background-color: black;
 }
-.footer__container {
-  max-width: 1024px;
-  width: 100%;
+.footer__item {
+  max-width: 500px;
+  border-top: 2px solid #fff;
   margin: 0 auto;
-  text-align: center ;
-  padding-bottom: 20px;
+  padding: 25px ;
 }
-.footer__logo {
-  width: 80px;
-  margin: 0 auto 10px;
-}
-.footer__links {
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.footer__links__item {
-  display: inline-block;
-}
-.footer__links__item a {
-  text-decoration: none;
-  padding: 8px 16px;
-  display: block;
-}
-.footer__links__item a:hover {
-  color: #f9f9f9;
-}
-.footer p {
-  margin-bottom: 16px;
+@media (max-width: 374px) {
+  footer__item {
+    max-width: 350px;
+    width: 100%;
+  }
 }
 .language-selector {
   display: flex;
@@ -145,11 +52,6 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease;
-}
-.header__container {
-  padding: 8px 36px;
-  display: flex;
-  justify-content: space-between;
 }
 @media (max-width: 768px) {
   .header__container {
@@ -198,9 +100,8 @@
   .hero {
     background-image: url(/src/imagens2/hero-celular.jpg);
     padding-top: calc(50vw + 25px);
-    background-size: contain;
     background-repeat: no-repeat;
-    margin-top: -55px;
+    padding: 0;
   }
 }
 
@@ -215,9 +116,8 @@
   .hero {
     background-image: url(/src/imagens2/hero-celular.jpg);
     padding-top: calc(50vw + 25px);
-    background-size: contain;
     background-repeat: no-repeat;
-    margin-top: -55px;
+    padding: 0;
   }
 }
 .shows {
@@ -232,15 +132,21 @@
   margin-top: 44px;
 }
 .shows__list__div {
-  border: 2px solid #fff;
   padding: 25px 0;
   padding-left: 15px;
+}
+@media (max-width: 768px) {
+  .shows__list__div {
+    display: block;
+  }
+  .shows__list__div h4 {
+    text-align: center;
+  }
 }
 .shows__list__div h4 {
   margin-bottom: 22px;
 }
 .shows__list__text {
-  border: 2px solid yellow;
   padding: 24px;
   text-align: center;
 }
@@ -262,7 +168,6 @@
   }
 }
 .shows__list__item {
-  border: 2px solid blue;
   padding: 20px;
   justify-self: center;
 }
@@ -376,157 +281,20 @@
 .plans__list__item img {
   height: 83px;
 }
-.watch {
-  padding: 5.6vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+.footer {
+  background-color: black;
 }
-@media (max-width: 768px) {
-  .watch {
-    display: block;
-  }
+.footer__item {
+  max-width: 500px;
+  border-top: 2px solid #fff;
+  margin: 0 auto;
+  padding: 25px ;
 }
-.watch--full {
-  display: block;
-  position: relative;
-}
-.watch--full img {
-  width: 100%;
-}
-.watch--full-container {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  left: 50%;
-  width: calc(50% - 5.6vw);
-  display: flex;
-  flex-direction: column;
-  justify-content: center ;
-}
-@media (max-width: 768px) {
-  .watch--full-container {
-    position: relative;
-    left: 0;
+@media (max-width: 374px) {
+  footer__item {
+    max-width: 350px;
     width: 100%;
   }
-}
-.watch img {
-  max-width: 100%;
-}
-.watch__link {
-  padding: 0 2vw;
-}
-.watch__link h2 {
-  padding-bottom: 24px;
-}
-.available-devices {
-  padding: 5.6vw;
-}
-.available-devices h2 {
-  text-align: center;
-  margin-bottom: 24px;
-}
-.available-devices__list {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(4, 1fr);
-}
-@media (max-width: 768px) {
-  .available-devices__list {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.available-devices__list__item {
-  text-align: center;
-}
-.available-devices__list__item h4 {
-  margin-top: 20px;
-  margin-bottom: 24px;
-}
-.available-devices__list__item li {
-  list-style: none;
-}
-.available-devices__list__item img {
-  max-width: 100%;
-}
-.faq {
-  padding: 5.6vw;
-}
-.faq h2 {
-  text-align: center;
-  margin-bottom: 24px;
-}
-.faq__questions__item {
-  background-color: #13151d;
-  margin-bottom: 16px;
-}
-.faq__questions__item__question {
-  color: #fff;
-  font-size: 20px;
-  padding: 24px;
-  display: block;
-  cursor: pointer;
-  position: relative;
-}
-.faq__questions__item__question::after {
-  content: '+';
-  top: 0;
-  position: absolute;
-  right: 24px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  font-size: 40px;
-}
-.faq__questions__item__answer {
-  height: 0;
-  overflow: hidden;
-  transition: height, 0.5s ease;
-  padding: 0 24px;
-}
-.faq__questions__item--is-open .faq__questions__item__question::after {
-  content: '-';
-}
-.faq__questions__item--is-open .faq__questions__item__answer {
-  height: auto;
-  padding: 24px;
-  transition: height, 0.5s ease;
-}
-.footer {
-  padding: 26px 8px;
-}
-.footer__container {
-  max-width: 1024px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center ;
-  padding-bottom: 20px;
-}
-.footer__logo {
-  width: 80px;
-  margin: 0 auto 10px;
-}
-.footer__links {
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.footer__links__item {
-  display: inline-block;
-}
-.footer__links__item a {
-  text-decoration: none;
-  padding: 8px 16px;
-  display: block;
-}
-.footer__links__item a:hover {
-  color: #f9f9f9;
-}
-.footer p {
-  margin-bottom: 16px;
 }
 .language-selector {
   display: flex;
@@ -564,11 +332,6 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease;
-}
-.header__container {
-  padding: 8px 36px;
-  display: flex;
-  justify-content: space-between;
 }
 @media (max-width: 768px) {
   .header__container {
@@ -805,15 +568,21 @@ body {
   margin-top: 44px;
 }
 .shows__list__div {
-  border: 2px solid #fff;
   padding: 25px 0;
   padding-left: 15px;
+}
+@media (max-width: 768px) {
+  .shows__list__div {
+    display: block;
+  }
+  .shows__list__div h4 {
+    text-align: center;
+  }
 }
 .shows__list__div h4 {
   margin-bottom: 22px;
 }
 .shows__list__text {
-  border: 2px solid yellow;
   padding: 24px;
   text-align: center;
 }
@@ -835,7 +604,6 @@ body {
   }
 }
 .shows__list__item {
-  border: 2px solid blue;
   padding: 20px;
   justify-self: center;
 }
@@ -900,47 +668,3 @@ body {
 }
 
 
-.watch {
-  padding: 5.6vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-@media (max-width: 768px) {
-  .watch {
-    display: block;
-  }
-}
-.watch--full {
-  display: block;
-  position: relative;
-}
-.watch--full img {
-  width: 100%;
-}
-.watch--full-container {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  left: 50%;
-  width: calc(50% - 5.6vw);
-  display: flex;
-  flex-direction: column;
-  justify-content: center ;
-}
-@media (max-width: 768px) {
-  .watch--full-container {
-    position: relative;
-    left: 0;
-    width: 100%;
-  }
-}
-.watch img {
-  max-width: 100%;
-}
-.watch__link {
-  padding: 0 2vw;
-}
-.watch__link h2 {
-  padding-bottom: 24px;
-}

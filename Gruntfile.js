@@ -27,11 +27,7 @@ module.exports = function(grunt) {
             },
             build: {
                 files: [{
-                    expand: true,
-                    cwd: 'src/js',
-                    src: '*.js',
-                    dest: 'dist/js',
-                    ext: '.min.js'
+                    'dist/js/main.js' : 'src/main.js'
                 }]
             }
         },
@@ -42,6 +38,16 @@ module.exports = function(grunt) {
                 files: ['src/styles/**/*less'],
                 tasks: ['less:development'],
             },
+        },
+        imagemin: {
+            dynamic: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/imagens2/',
+                    src: ['**/*.{png,jpg,jpeg,gif,svg,avif,mp4,webp}'],
+                    dest: 'dist/imagens/'
+                }]
+            }
         }
     });
 
@@ -49,8 +55,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     // Default task(s).
     grunt.registerTask('default', ['watch','uglify']);
-    grunt.registerTask('build', ['less:production']);
+    grunt.registerTask('build', ['less:production','uglify','imagemin']);
 };
